@@ -19,7 +19,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-50 py-12 px-4">
       <div className="max-w-md mx-auto space-y-8">
         <h1 className="text-4xl font-bold text-center text-indigo-600 mb-8">
-          🔢 Prime and Factorial Analyzer 
+          🔢 Prime and Factorial Checker
         </h1>
         
         <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-2xl shadow-lg">
@@ -41,7 +41,7 @@ export default function Home() {
             type="submit"
             className="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg font-semibold text-lg hover:bg-indigo-700 transition-colors duration-200 transform hover:scale-[1.01]"
           >
-            Analyze Number
+            Check Number
           </button>
         </form>
 
@@ -62,9 +62,14 @@ export default function Home() {
                   : '⚠️ Factorial undefined for negative numbers'}
               </p>
             </div>
+            
           </div>
+
+          
         )}
+        <h2 className="text-xl font-semibold text-indigo-600 mb-2">(Technical Assessment) </h2>
       </div>
+      
     </div>
   );
 }
